@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "warnings": [
+    {
+      "code": "V061",
+      "cwe": 0,
+      "level": 0,
+      "positions": [],
+      "message": "java.lang.UnsatisfiedLinkError: /Users/ermekshmanov/.config/PVS-Studio-Java/7.30.80678/native/mac/libanalysis-core.dylib: dlopen(/Users/ermekshmanov/.config/PVS-Studio-Java/7.30.80678/native/mac/libanalysis-core.dylib, 0x0001): tried: \u0027/Users/ermekshmanov/.config/PVS-Studio-Java/7.30.80678/native/mac/libanalysis-core.dylib\u0027 (mach-o file, but is an incompatible architecture (have (x86_64), need (arm64e))).",
+      "stacktrace": [
+        "java.base/jdk.internal.loader.NativeLibraries.load(Native Method)",
+        "java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:331)",
+        "java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:197)",
+        "java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:139)",
+        "java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2404)",
+        "java.base/java.lang.Runtime.load0(Runtime.java:817)",
+        "java.base/java.lang.System.load(System.java:2015)",
+        "com.pvsstudio.runner.NativeLoader.run(NativeLoader.java:162)",
+        "com.pvsstudio.runner.NativeLoader.load(NativeLoader.java:223)",
+        "com.pvsstudio.runner.NativeLoader.loadInCheckLicenseProcess(NativeLoader.java:216)",
+        "com.pvsstudio.Main.checkLicenseInNewJavaAnalyzerCoreProcess(Main.java:284)",
+        "com.pvsstudio.Main.main(Main.java:532)"
+      ],
+      "projects": [],
+      "favorite": false,
+      "falseAlarm": false
+    }
+  ]
+}

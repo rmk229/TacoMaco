@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+
+  data:
+    cassandra:
+      keyspace-name:
+      local-datacenter: datacenter1
+      username: tacocloud
+      password: s3cr3tP455w0rd
+      contact-points:
+      - casshost-1.tacocloud.com
+      - casshost-2.tacocloud.com
+      - casshost-3.tacocloud.com
+      - port: 9043
+
+      #spring:
+#  application:
+#    name: tacos
+#  profiles:
+#    active: default
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#  thymeleaf:
+#    cache: false
+#  datasource:
+#    generate-unique-name: false
+#    name: tacocloud
+#server:
+#  port: 8080
+
+
+    #url: jdbc:postgresql://localhost:5432/postgres
+  #username: postgres
+  #password: password
+  #driver-class-name: org.postgresql.Driver
+  #  jpa:
+  #    properties:
+  #      hibernate:
+  #        dialect: org.hibernate.dialect.PostgreSQLDialect
+  #    show-sql: true
+  #    properties:
+  #      hibernate:
+  #        format_sql: true
+
